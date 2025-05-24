@@ -2,8 +2,6 @@
 
 Sistema para geração de certificados oficiais fictícios para bebês reborn, incluindo Certidão de Nascimento e Carteirinha de Vacinação SUSBR.
 
-![Exemplo de Certidão](image.png)
-
 ## 🎯 Objetivo
 Permitir que mães de bebês reborn gerem documentos personalizados em PDF com aparência oficial, contendo observação de "sem validade legal".
 
@@ -58,7 +56,7 @@ Permitir que mães de bebês reborn gerem documentos personalizados em PDF com a
   RUN npm ci
   COPY . .
   RUN npm run build
-  CMD ["npm", "run", "preview"]
+  CMD ["npx", "serve", "-s", "dist"]
   ```
 - [ ] docker-compose.yml:
   ```yaml
@@ -112,6 +110,7 @@ VITE_OFFICIAL_DISCLAIMER="Documento sem validade oficial"
 ├── App.tsx
 └── main.tsx
 ```
+(Nota: Esta estrutura de arquivos representa o layout planejado para o projeto.)
 
 ## 🖨️ Especificações Técnicas
 
